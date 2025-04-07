@@ -1,0 +1,106 @@
+@use "../utils/colors" as c;
+
+.loginPage {
+  width: 100dvw;
+  height: 100dvh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: c.$bg-black;
+
+  &__container {
+    border: 1px solid c.$border-bg-white;
+    border-radius: 1rem;
+
+    box-shadow: 0 0 50px rgba(36, 27, 1, 0.213);
+
+    padding: 3rem;
+
+    background-color: rgba(c.$bg-white, $alpha: 0.2);
+
+    text-align: center;
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    &__logo {
+      width: 100px;
+      margin: 0 auto 2rem;
+    }
+
+    &__title {
+      font-size: 2.2rem;
+      line-height: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    &__description {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+      text-align: center;
+
+      &__linkSignup {
+        text-decoration: none;
+        font-weight: 600;
+        color: c.$bg-black;
+        transition: 300ms;
+
+        &:hover {
+          color: c.$primary;
+        }
+      }
+    }
+    &__formLogin {
+      &__label {
+        display: block;
+        text-align: start;
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+      }
+      &__input {
+        display: block;
+        width: 100%;
+        border: 1px solid c.$border-bg-white;
+        border-radius: 5px;
+        height: 40px;
+        width: 300px;
+        margin-bottom: 0.8rem;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding-left: 0.5rem;
+      }
+
+      &__btnLogin {
+        color: c.$bg-white;
+        background-color: c.$bg-black;
+        padding: 0.5rem 1rem;
+        border: 1px solid c.$border-bg-black;
+        border-radius: 5px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 500ms;
+        margin-top: 1rem;
+
+        &:hover {
+          background-color: c.$secondary;
+          border: 1px solid c.$border-secondary;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
+
+.icon_view_pwd {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  width: 17px;
+}
+
+.container__input__view {
+  position: relative;
+}

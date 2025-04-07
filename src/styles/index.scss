@@ -1,0 +1,7 @@
+@use "./utils/colors" as c;
+@use "./utils/fonts" as f;
+
+body {
+  font-family: f.$main-Font;
+  font-weight: 400;
+}
