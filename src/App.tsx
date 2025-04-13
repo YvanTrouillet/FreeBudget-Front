@@ -1,12 +1,11 @@
 import React from "react";
 import "./styles/App.scss";
-import LoginPage from "./pages/Auth/LoginPage";
-import SignUpPage from "./pages/Auth/SignUpPage";
+import Router from "./Router";
 
 const App = () => {
   return (
     <div>
-      <SignUpPage />
+      <Router />
     </div>
   );
 };

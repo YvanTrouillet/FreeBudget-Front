@@ -1,57 +1,21 @@
 import React from "react";
-import "../../styles/Pages/LoginPage.scss";
-import logo from "../../assets/Logo.svg";
+import Auth from "../../features/Auth";
+import { apiRequest } from "../../utils/api";
 
 const LoginPage = () => {
-  return (
-    <div className="loginPage">
-      <div className="loginPage__container">
-        <img
-          src={logo}
-          alt="Lien page d'accueil"
-          className="loginPage__container__logo"
-        />
-        <form action="" className="loginPage__container__formLogin">
-          <label
-            htmlFor="email"
-            className="loginPage__container__formLogin__label"
-          >
-            Email
-          </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            className="loginPage__container__formLogin__input"
-          />
-          <label
-            htmlFor="password"
-            className="loginPage__container__formLogin__label"
-          >
-            Mot de passe
-          </label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            className="loginPage__container__formLogin__input"
-          />
-          <button
-            type="submit"
-            className="loginPage__container__formLogin__btnLogin"
-          >
-            Se connecter
-          </button>
-        </form>
-        <p className="loginPage__container__description">
-          Première connexion ?{" "}
-          <a href="#" className="loginPage__container__description__linkSignup">
-            S’enregistrer
-          </a>
-        </p>
-      </div>
-    </div>
-  );
+  const handleSubmitLogin = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const myFormData = new FormData(event.currentTarget);
+    const newUser = {
+      email: myFormData.get("email") as string,
+      password: myFormData.get("password") as string,
+    };
+    console.log(newUser);
+    try {
+      const user = await apiRequest("/users", "POST", newUser);
+    } catch (error) {}
+  };
+  return <Auth login={true} handleSubmit={handleSubmitLogin} />;
 };
 
 export default LoginPage;
