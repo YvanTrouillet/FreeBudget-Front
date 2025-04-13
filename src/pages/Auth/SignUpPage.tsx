@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import Auth from "../../features/Auth";
-import { apiRequest } from "../../utils/api";
-import { ToastContainer, toast } from "react-toastify";
 
 const SignUpPage = () => {
   const handleSubmitSignup = async (
@@ -18,7 +16,6 @@ const SignUpPage = () => {
     const confirmPassword = myFormData.get("confirmPassword");
 
     if (confirmPassword !== newUser.password) {
-
     }
     console.log(newUser);
     console.log(confirmPassword);

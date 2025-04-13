@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/Background.scss";
 
 const Background = () => {

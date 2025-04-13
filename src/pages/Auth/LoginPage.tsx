@@ -13,6 +13,7 @@ const LoginPage = () => {
     console.log(newUser);
     try {
       const user = await apiRequest("/users", "POST", newUser);
+      console.log(user);
     } catch (error) {}
   };
   return <Auth login={true} handleSubmit={handleSubmitLogin} />;

@@ -31,7 +31,6 @@ const Auth = ({
     isValideSpecialChar: false,
     isValideConfirmPwd: false,
   });
-  const [errors, setErrors] = useState("");
 
   const validatePassword = (password: string) => {
     setConfigValidationPwd({
@@ -224,7 +223,6 @@ const Auth = ({
             <button
               type="submit"
               className="loginPage__container__formLogin__btnLogin"
-              disabled={errors !== ""}
             >
               Se connecter
             </button>
@@ -232,7 +230,6 @@ const Auth = ({
             <button
               type="submit"
               className="loginPage__container__formLogin__btnLogin"
-              disabled={errors !== ""}
             >
               S'inscrire
             </button>
