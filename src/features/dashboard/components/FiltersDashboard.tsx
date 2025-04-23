@@ -1,5 +1,4 @@
-import React from "react";
-import "../../styles/filterDashboard.scss";
+import "../styles/filterDashboard.scss";
 
 const FiltersDashboard = () => {
   return (

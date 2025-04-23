@@ -1,8 +1,9 @@
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router";
-import "./styles/index.scss";
+import "./shared/styles/index.scss";
+import "./shared/styles/reset.css";
+import Background from "./shared/components/Background";
 import App from "./App";
-import Background from "./components/Background";
 
 createRoot(document.getElementById("root")!).render(
   <div>

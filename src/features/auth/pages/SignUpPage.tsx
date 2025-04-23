@@ -1,5 +1,5 @@
 import React from "react";
-import Auth from "../../features/Auth";
+import Auth from "../components/Auth";
 
 const SignUpPage = () => {
   const handleSubmitSignup = async (

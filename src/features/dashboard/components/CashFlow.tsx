@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import "../../styles/cashFlow.scss";
+import { useEffect, useState } from "react";
+import "../styles/cashFlow.scss";
 import BarsCashFlow from "./BarsCashFlow";
 
 const CashFlow = () => {

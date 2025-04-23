@@ -1,7 +1,6 @@
-import React from "react";
-import "../../styles/bankAccount.scss";
-import iconCross from "../../assets/cross.svg";
-import iconSwitch from "../../assets/switch.svg";
+import "../styles/bankAccount.scss";
+import iconCross from "../assets/cross.svg";
+import iconSwitch from "../assets/switch.svg";
 
 const BankAccount = () => {
   return (

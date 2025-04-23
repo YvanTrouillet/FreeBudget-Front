@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router";
 import iconViewPwd from "../assets/view-pwd.svg";
 import iconViewClosePwd from "../assets/view-close-pwd.svg";
-import logo from "../assets/Logo.svg";
+import logo from "../../../shared/assets/Logo.svg";
 import "../styles/Auth.scss";
 
 const Auth = ({

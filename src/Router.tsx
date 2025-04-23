@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router";
-import LoginPage from "./pages/Auth/LoginPage";
-import SignUpPage from "./pages/Auth/SignUpPage";
-import DashboardPage from "./pages/DashboardPage";
+import LoginPage from "./features/auth/pages/LoginPage";
+import SignUpPage from "./features/auth/pages/SignUpPage";
+import DashboardPage from "./features/dashboard/pages/DashboardPage";
 
 const Router = () => {
   return (

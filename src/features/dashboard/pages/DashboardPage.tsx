@@ -1,9 +1,9 @@
-import BankAccount from "../features/DashBoard/BankAccount";
-import CashBag from "../features/DashBoard/CashBag";
-import CashFlow from "../features/DashBoard/CashFlow";
-import FiltersDashboard from "../features/DashBoard/FiltersDashboard";
-import Header from "../layouts/Header";
-import "../styles/Pages/DashboardPage.scss";
+import BankAccount from "../components/BankAccount";
+import CashBag from "../components/CashBag";
+import CashFlow from "../components/CashFlow";
+import FiltersDashboard from "../components/FiltersDashboard";
+import Header from "../../../shared/components/Header";
+import "../styles/DashboardPage.scss";
 
 const DashboardPage = () => {
   return (

@@ -1,4 +1,4 @@
-import Menu from "../components/Menu";
+import Menu from "./Menu";
 import logo from "../assets/Logo.svg";
 import "../styles/header.scss";
 import { useState } from "react";
