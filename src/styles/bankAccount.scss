@@ -1,0 +1,124 @@
+@use "./utils/colors" as c;
+
+.bankAccount {
+  height: 588px;
+  width: 410px;
+  background: url("../assets/masculin_img.png");
+  grid-row: 3/4;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 1rem;
+  padding: 1rem;
+
+  &__account {
+    background-color: #e7e4df5a;
+    border: 1px solid c.$border-bg-white;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 0.7rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+    &__containerInfo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__img {
+        background-color: #e7e4df83;
+        width: 94px;
+        height: 59px;
+        border-radius: 0.5rem;
+      }
+
+      &__info {
+        &__title {
+          font-weight: 700;
+          font-size: 20px;
+        }
+      }
+
+      &__switch {
+        background-color: #e7e4df8a;
+        border-radius: 50%;
+        border: 1px solid c.$border-bg-white;
+        width: 40px;
+        height: 40px;
+        transition: 300ms;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.08);
+          box-shadow: 0 5px 10px #1e1e1e16;
+        }
+
+        & img {
+          margin: 0 auto;
+        }
+      }
+    }
+
+    &__balance {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+
+      &__solde {
+        font-size: 0.8rem;
+      }
+
+      &__price {
+        position: relative;
+        font-size: 2rem;
+        &__device {
+          position: absolute;
+          font-size: 1.2rem;
+          font-style: normal;
+          top: 0.4rem;
+          right: -1.5rem;
+        }
+      }
+    }
+  }
+  &__addAccount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7e4df5a;
+    border: 1px solid c.$border-bg-white;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 0.7rem;
+    padding: 1rem;
+
+    &__text {
+      font-size: 0.9rem;
+    }
+
+    &__btn {
+      background-color: #e7e4df8a;
+      border-radius: 50%;
+      border: 1px solid c.$border-bg-white;
+      width: 40px;
+      height: 40px;
+      font-size: 2rem;
+      font-weight: 200;
+      transition: 300ms;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.08);
+        box-shadow: 0 5px 10px #1e1e1e16;
+      }
+
+      & img {
+        margin: 0 auto;
+      }
+    }
+  }
+}

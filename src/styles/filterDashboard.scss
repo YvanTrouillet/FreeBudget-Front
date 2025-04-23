@@ -1,0 +1,23 @@
+.filterDashboard {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+
+  &__btn {
+    background-color: #e7e4df9d;
+    border: 1px solid #bbbbbb;
+    border-radius: 3rem;
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: 300ms;
+
+    &:hover {
+      background-color: #e7e4df;
+      transform: scale(1.05);
+    }
+  }
+}

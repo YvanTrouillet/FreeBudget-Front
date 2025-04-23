@@ -1,0 +1,64 @@
+.cashBag {
+  height: 143px;
+  background-color: #e7e4df7d;
+  color: #1e1e1e;
+  border-radius: 0.7rem;
+  border: 1px solid #bbbbbb;
+  flex: 1;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &--expenses {
+    background-color: #ff9350;
+    border-radius: 0.7rem;
+    height: 143px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    &__price {
+      position: relative;
+      font-size: 40px;
+      font-weight: 800;
+      &__device {
+        position: absolute;
+        top: 0.5rem;
+        right: -1.5rem;
+        font-style: normal;
+        font-size: 20px;
+      }
+    }
+
+    &__growth {
+      background-color: #fed144;
+      color: #1e1e1e;
+      padding: 0.2rem 0.6rem;
+      border-radius: 0.2rem;
+
+      &--spend {
+        background-color: #ff9350;
+        color: #1e1e1e;
+        padding: 0.2rem 0.6rem;
+        border-radius: 0.2rem;
+      }
+    }
+  }
+}
