@@ -1,5 +1,4 @@
-import React from "react";
-import "../../styles/cashBag.scss";
+import "../styles/cashBag.scss";
 
 const CashBag = ({ spend }: { spend: string }) => {
   return (

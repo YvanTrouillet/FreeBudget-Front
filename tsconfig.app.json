@@ -22,5 +22,20 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "src/vite-env.d.ts",
+    "src/App.tsx",
+    "src/shared/utils/api.tsx",
+    "src/features/auth/pages/LoginPage.tsx",
+    "src/features/dashboard/components/BankAccount.tsx",
+    "src/features/dashboard/components/BarsCashFlow.tsx",
+    "src/features/dashboard/components/CashBag.tsx",
+    "src/features/dashboard/components/CashFlow.tsx",
+    "src/features/dashboard/components/FiltersDashboard.tsx",
+    "src/features/auth/components/Auth.tsx",
+    "src/shared/components/Menu.tsx",
+    "src/shared/components/Background.tsx",
+    "src/shared/components/Header.tsx"
+  ]
 }

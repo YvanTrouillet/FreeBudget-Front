@@ -1,6 +1,6 @@
 import React from "react";
-import Auth from "../../features/Auth";
-import { apiRequest } from "../../utils/api";
+import Auth from "../components/Auth";
+import { apiRequest } from "../../../shared/utils/api";
 
 const LoginPage = () => {
   const handleSubmitLogin = async (event: React.FormEvent<HTMLFormElement>) => {

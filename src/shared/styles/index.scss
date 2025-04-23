@@ -1,5 +1,5 @@
-@use "./utils/colors" as c;
-@use "./utils/fonts" as f;
+@use "./colors" as c;
+@use "./fonts" as f;
 
 body {
   font-family: f.$main-Font;
