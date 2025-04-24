@@ -145,7 +145,7 @@ const CashFlow = () => {
   return (
     <div className="cashFlow">
       <div className="cashFlow__year">
-        <h2 className="cashFlow__year__title">Total des revenu de l’année</h2>
+        <h2 className="cashFlow__year__title">Total des revenus de l’année</h2>
         <div className="cashFlow__year__container">
           <strong className="cashFlow__year__container__price">
             {totalValue}
@@ -157,7 +157,7 @@ const CashFlow = () => {
         </div>
       </div>
       <div className="cashFlow__flow">
-        <h2>Trésorerie</h2>
+        <h2 className="cashFlow__flow__title">Trésorerie</h2>
         <div className="cashFlow__flow__grid">
           <div className="cashFlow__flow__grid__box">
             <div className="cashFlow__flow__grid__box__lineOne">

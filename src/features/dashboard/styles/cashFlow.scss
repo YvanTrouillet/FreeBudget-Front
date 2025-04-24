@@ -51,6 +51,12 @@
     border-top: 1px solid #e7e4df83;
     padding-top: 1rem;
 
+    &__title {
+      font-size: 1rem;
+      font-weight: 200;
+      margin-bottom: 1.8rem;
+    }
+
     &__grid {
       width: 100%;
       margin-top: 1rem;
