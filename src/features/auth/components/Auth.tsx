@@ -53,8 +53,6 @@ const Auth = ({
       !configValidationPwd.isValideMinNumber ||
       !configValidationPwd.isValideSpecialChar);
 
-  const showValidateConfirmPwd =
-    formData.confirmPwd.length > 0 && !configValidationPwd.isValideConfirmPwd;
 
   const handleViewPassword = () => {
     setIsShowPwd(!isShowPwd);
@@ -211,12 +209,6 @@ const Auth = ({
                   onClick={handleViewConfirmPassword}
                 />
               </div>
-              {!configValidationPwd.isValideConfirmPwd &&
-                showValidateConfirmPwd && (
-                  <p className="toast__password">
-                    Les mots de passe ne sont pas identique
-                  </p>
-                )}
             </>
           )}
           {login ? (

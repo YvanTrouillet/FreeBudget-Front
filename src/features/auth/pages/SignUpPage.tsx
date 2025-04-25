@@ -1,7 +1,10 @@
 import React from "react";
 import Auth from "../components/Auth";
+import { apiRequest } from "../../../shared/utils/api";
+import { useNavigate } from "react-router";
 
 const SignUpPage = () => {
+  let navigate = useNavigate();
   const handleSubmitSignup = async (
     event: React.FormEvent<HTMLFormElement>
   ) => {
@@ -17,15 +20,14 @@ const SignUpPage = () => {
 
     if (confirmPassword !== newUser.password) {
     }
-    console.log(newUser);
-    console.log(confirmPassword);
 
-    // try {
-    //   const user = await apiRequest("/signup", "POST", newUser);
-    //   console.log(user);
-    // } catch (error) {
-    //   console.error(error);
-    // }
+    try {
+      const user = await apiRequest("/signup", "POST", newUser);
+      if (!user) return;
+      navigate("/login");
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (

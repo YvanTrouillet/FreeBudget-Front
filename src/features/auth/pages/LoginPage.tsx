@@ -6,14 +6,14 @@ const LoginPage = () => {
   const handleSubmitLogin = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const myFormData = new FormData(event.currentTarget);
-    const newUser = {
+    const user = {
       email: myFormData.get("email") as string,
       password: myFormData.get("password") as string,
     };
-    console.log(newUser);
+    console.log(user);
     try {
-      const user = await apiRequest("/users", "POST", newUser);
-      console.log(user);
+      const auth = await apiRequest("/login", "POST", user);
+      console.log(auth);
     } catch (error) {}
   };
   return <Auth login={true} handleSubmit={handleSubmitLogin} />;
