@@ -10,7 +10,7 @@ export const apiRequest = async <D = any,>(
     method: method,
     headers: {
       "Content-Type": "application/json",
-      //Authorization: `Bearer ${localStorage.getItem("jwt")}`,
+      credentials: "include",
     },
     body: data ? JSON.stringify(data) : null,
   };

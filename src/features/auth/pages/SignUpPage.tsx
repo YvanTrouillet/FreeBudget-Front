@@ -19,12 +19,13 @@ const SignUpPage = () => {
     const confirmPassword = myFormData.get("confirmPassword");
 
     if (confirmPassword !== newUser.password) {
+      return;
     }
 
     try {
       const user = await apiRequest("/signup", "POST", newUser);
       if (!user) return;
-      navigate("/login");
+      navigate("/");
     } catch (error) {
       console.error(error);
     }
